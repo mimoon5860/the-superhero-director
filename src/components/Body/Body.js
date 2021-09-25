@@ -4,19 +4,21 @@ import Cart from './Cart/Cart';
 import ScientistCard from './ScientistCard/ScientistCard';
 
 const Body = () => {
+
+    // State Effect and function for api call 
     const [ScientistData, setScientistData] = useState([]);
     useEffect(() => {
         fetch('./scientist.json')
             .then(res => res.json())
             .then(data => setScientistData(data))
     }, [])
+
+    // State and function for Count and Show name on cart 
     const [ScientistCount, setScientistCount] = useState(0)
     const [AddScientistToCart, setAddScientistToCart] = useState([]);
     function addScientist(scientist) {
         const addedScientist = [...AddScientistToCart, scientist]
         setAddScientistToCart(addedScientist)
-
-
         const count = ScientistCount + 1;
         setScientistCount(count)
     }

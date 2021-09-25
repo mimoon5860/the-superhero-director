@@ -2,7 +2,10 @@ import React from 'react';
 import './ScientistCard.css'
 
 const ScientistCard = props => {
+
+    // Destructuring for make cards
     const { name, university, age, nationality, photo, researchCost, subject } = props.data;
+
     return (
         <div className='scientist-card'>
             <img src={photo} alt="" />

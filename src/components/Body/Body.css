@@ -1,3 +1,4 @@
+/* Total Body style Cards and Cart  */
 .body{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -5,11 +6,16 @@
     margin: 0 auto;
     padding: 20px 0;
 }
+
+/* All card styles  */
 .all-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:20px;
 }
+
+
+/* Cart Style added here  */
 .cart-wrapper{
     width: 20%;
     background-color: #90AFC5;
