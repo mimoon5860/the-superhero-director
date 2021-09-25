@@ -29,7 +29,7 @@ const Body = () => {
                 }
             </div>
             <div className='cart-wrapper'>
-                <h3><i class="fas fa-users"></i> Scientist Added: {ScientistCount}</h3>
+                <h3><i className="fas fa-users"></i> Scientist Added: {ScientistCount}</h3>
                 <Cart data={AddScientistToCart}></Cart>
             </div>
         </div>

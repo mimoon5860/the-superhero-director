@@ -3,6 +3,7 @@
     padding:0;
 }
 .App{
-    background-color: #F6F8FA;
+    background-image: url('./image/bg.jpg');
+    background-attachment: fixed;
     padding-top:20px;
 }

@@ -8,7 +8,7 @@ const Cart = props => {
     }
     return (
         <div className='cart'>
-            <p>Total Cost: <b>${totalCost}</b></p>
+            <p>Total Research Cost: <b>${totalCost}</b></p>
             {props.data.map(scientist => <ShowName scientist={scientist} key={scientist.key} ></ShowName>)}
         </div>
     );
@@ -16,7 +16,7 @@ const Cart = props => {
 function ShowName(props) {
     const { name } = props.scientist;
     return (
-        <div>
+        <div className='name'>
             <li>{name}</li>
         </div>
     )

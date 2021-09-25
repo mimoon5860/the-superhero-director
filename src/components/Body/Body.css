@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     width: 95%;
-    margin: 20px auto;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 .all-cards{
     display: grid;
@@ -11,10 +12,9 @@
 }
 .cart-wrapper{
     width: 20%;
-    background-color: #5B3C89;
+    background-color: #90AFC5;
     position: fixed;
     right: 25px;
     padding: 20px;
     border-radius: 10px;
-    color: white;
 }

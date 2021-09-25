@@ -1,4 +1,9 @@
 .cart p{
     font-size: 20px;
     font-weight: bold;
+    color: rgb(46, 46, 46);
+}
+.name{
+    font-size: 20px;
+    font-weight: 500;
 }
