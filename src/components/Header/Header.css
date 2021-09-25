@@ -1,0 +1,17 @@
+.header{
+    text-align: center;
+    width: 95%;
+    background-color: #5C588E;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+.header h1{
+    font-variant: small-caps;
+    color: #d6cee7;
+}
+.header p{
+    color: white;
+    font-weight: 400;
+}

@@ -1,0 +1,29 @@
+.scientist-card{
+    background-color: #a8dacb;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.scientist-card:hover{
+    background-color: #5fcfae;
+    
+}
+.scientist-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.scientist-card button{
+    margin-top: 10px;
+    border:none;
+    font-weight: bold;
+    background-color: #087A81;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scientist-card p{
+    padding: 7px 0;
+}
