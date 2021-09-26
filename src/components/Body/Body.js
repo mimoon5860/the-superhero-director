@@ -16,11 +16,22 @@ const Body = () => {
     // State and function for Count and Show name on cart 
     const [ScientistCount, setScientistCount] = useState(0)
     const [AddScientistToCart, setAddScientistToCart] = useState([]);
+
+    const unique = [];
+    for (const key of AddScientistToCart) {
+        unique.push(key.key);
+    }
     function addScientist(scientist) {
-        const addedScientist = [...AddScientistToCart, scientist]
-        setAddScientistToCart(addedScientist)
-        const count = ScientistCount + 1;
-        setScientistCount(count)
+        if (unique.includes(scientist.key)) {
+            return;
+        }
+        else {
+            const addedScientist = [...AddScientistToCart, scientist]
+            setAddScientistToCart(addedScientist)
+            const count = ScientistCount + 1;
+            setScientistCount(count)
+        }
+
     }
 
     return (
